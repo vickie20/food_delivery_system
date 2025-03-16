@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Root Variables for Theme */
+:root {
+    --primary-color: #6C63FF;
+    --accent-color: #FF4D6D;
+    --text-color: #EAEAEA;
+    --background-color: #0A0A14;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(255, 255, 255, 0.2);
+    --shadow-color: rgba(108, 99, 255, 0.3);
+}
+
+/* Body Styling */
+body {
+    background: radial-gradient(circle, rgba(10, 10, 20, 1) 20%, rgba(20, 20, 40, 1) 100%);
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+    width: 350px;
+    background: var(--glass-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px var(--shadow-color);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    outline: none;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+button:hover {
+    background: var(--accent-color);
+    box-shadow: 0 4px 18px var(--accent-color);
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    margin-top: 15px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-buttons a:hover {
+    color: var(--accent-color);
+}
+
+/* Dashboard */
+.dashboard {
+    margin: 50px;
+}
+
+/* Logout Button */
+.logout-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #FF3131;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(255, 49, 49, 0.4);
+}
+
+.logout-btn:hover {
+    background: #D90429;
+    box-shadow: 0 4px 18px rgba(255, 49, 49, 0.6);
+}

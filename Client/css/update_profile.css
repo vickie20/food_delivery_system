@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Root Variables for Purple Nebula Noir Theme */
+:root {
+    --primary-color: #A463F2;  /* Soft purple */
+    --accent-color: #FF4DA6;   /* Neon pink */
+    --text-color: #E5DAFF;     /* Light lavender */
+    --background-color: #0D021F; /* Deep space purple */
+    --glass-bg: rgba(50, 20, 80, 0.3); /* Nebula glass effect */
+    --border-color: rgba(255, 255, 255, 0.15);
+    --shadow-color: rgba(164, 99, 242, 0.4);
+}
+
+/* Body Styling */
+body {
+    background: radial-gradient(circle, rgba(25, 5, 45, 1) 20%, rgba(15, 5, 35, 1) 100%);
+    color: var(--text-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    background: var(--glass-bg);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.navbar a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 8px 12px;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+/* Form Container */
+form {
+    background: var(--glass-bg);
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 8px 25px var(--shadow-color);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+button:hover {
+    background: var(--accent-color);
+    box-shadow: 0 4px 18px var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}

@@ -1,0 +1,22 @@
+localhost/Food_delivery_system/Client
+localhost/Food_delivery_system/Admin
+
+CREATE DATABASE adan_food_db; 
+then import the adan_food_db.sql
+
+Credentials
+Admin:
+tech@gmail.com : Admin
+Client:
+test : Admin
+
+Download and install Composer in your laptop for the payment gateway
+https://getcomposer.org/download/  
+
+after downloading, Login to Stripe website,
+go to settings, business settings then create your business...
+
+ go to Developers tab, the copy your secrect key then past on checkou.php line 17:::
+
+
+
