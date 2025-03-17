@@ -4,7 +4,7 @@ require '../../vendor/autoload.php'; // Stripe library
 include 'config/db_connect.php';
 
 // Stripe API Key
-\Stripe\Stripe::setApiKey('sk_test_51NDk0JK6WtbuHR5ajbyUWanI8zMj5BQd5I6VMtkXbie1MeVZplVmj7ug7ubX8SBCWpkNr8D7qb6d2pxnaKtc0gTi00SdycxPwz');
+\Stripe\Stripe::setApiKey('paste your own secret key from stripe');
 
 if (empty($_SESSION['cart'])) {
     die('Your cart is empty.');
